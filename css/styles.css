@@ -7,10 +7,12 @@ body{
 .metricas__container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;  
     text-align: center;
+    align-items: center;
+    padding:0 2rem;
 }
+
 .metrica__item--destaque{
     color:#8E2424;
     font-weight: 600;
@@ -43,6 +45,7 @@ body{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         text-align: left;
         vertical-align: top;
+        margin:0 auto;
         
     }
 }

@@ -13,6 +13,12 @@ body{
     width:100%;
     height:100vh;
 }
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top:0;
+}
 
 nav{
     display: flex;
@@ -27,7 +33,7 @@ nav{
     margin-right: 1.8rem;
     cursor: pointer;
 }
-.header__buttons #register{
+.header__buttons #register, .newsletter__button{
     background-color: var(--main-color);
     color: #fff;
     padding: 0.625rem 1.125rem;
@@ -50,22 +56,26 @@ nav{
     margin-left: 15%;
     margin-right: 25%;
 }
-.sobrenos__container{
+.sobrenos__container, .vagas__container, 
+.testimonial, footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
+}
+.sobrenos__container{
     margin: 6rem auto;
 }
 
-.sobrenos__subtitulo{
+.subtitulo{
     font-weight: 600;
     line-height: 1.5rem;
     color: var(--main-color);
     margin-bottom: 1.5rem;
 }
 
-.sobrenos__descricao{
+.descricao{
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.8rem;
@@ -77,4 +87,145 @@ nav{
     font-weight: 600;
     line-height: 4rem;
     margin-bottom: 2.25rem;
+    letter-spacing: -2%;
+}
+
+.vagas__titulo{
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: -2%;
+    margin: 1rem auto 1.25rem;
+}
+.subtitulo-vagas{
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 1rem;
+    width: 7.8rem;
+    height: 1.75rem;
+    margin:6rem auto 1rem;
+    border:none;
+}
+.team__foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    margin:4rem auto;
+}
+
+.vagas-abertas__container{ margin:0 auto;
+    width:50%;
+    text-align: left;
+    list-style: none;
+    margin-top: 4rem;
+}
+.vagas-abertas__container > .vagas-abertas__item{
+   
+    width: 100%;
+}
+.vagas-abertas__container > .vagas-abertas__item p{
+    display: inline-block;
+}
+.vagas-abertas__item{
+    /* margin-left: 1.5rem; */
+    padding: 24px 24px 28px;
+    border:1px solid #EAECF0;
+    border-radius:1rem;
+    margin-top:1.5rem;
+}
+
+.vagas-abertas__subtitulo{
+    margin-bottom:2rem;
+}
+
+.vagas-abertas__tipo{
+    margin-right: 1.5rem;
+}
+
+.vagas-abertas__titulo, .vagas-abertas__subtitulo{
+    color: #101828;
+    font-weight: 500;
+}
+
+.vagas-abertas__tipo, .vagas-abertas__salario{
+    color: #667085;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+}
+
+.vagas-abertas__titulo{
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+.vagas-abertas__subtitulo{
+    font-size: 1.125;
+    line-height: 1.75rem;
+}
+.avatar{
+    width:56px;
+    margin:2rem auto 1rem;
+}
+.collaboradores{
+    margin: 4rem auto 1rem;
+}
+.testimonial{
+    background-color: rgba(196, 25, 25, 0.03);
+    width: 84%;
+    margin: 6rem auto;
+    border-radius: 1rem;
+}
+.testimonial__funcao{
+    margin-bottom: 4rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.testimonial__titulo, .footer__titulo{
+    font-size: 2.25rem;
+    letter-spacing: -0.022rem;
+    line-height: 2.75rem;
+    font-weight: 500;
+}
+.testimonial__nome{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: .25rem;
+}
+
+footer{
+    background-color: #F9FAFB;
+}
+.footer__titulo{
+    margin: 6rem auto 1.25rem;
+    font-weight: 600;
+}
+.footer__email{
+    width: 22.5rem;
+    height: 3rem;
+    border-radius:0.5rem;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+.newsletter__button{
+    height: 3rem;
+    width: 7.25rem;
+}
+.footer__descricao{
+    margin-bottom: 2.5rem;
+}
+.copyrights{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #98a2b3;
+    margin: 2rem auto 6rem;
+}
+::placeholder{
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: #667085;
+    font-weight: 400;
 }
